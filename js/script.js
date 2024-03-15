@@ -19,6 +19,10 @@ document.addEventListener('click', function(){
 let child = document.querySelector('child');
 
 document.addEventListener('click', function(){
-   child.classList.add('bg-click');
+   child = classList.add('bg-click');
+   for (let i = 0; i <= 100; i++) {
+    const element = array[i];
+    console.log(element);
+   }
 });
 
