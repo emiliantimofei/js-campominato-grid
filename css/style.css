@@ -17,6 +17,12 @@
     height: 800px;
     background-color: azure;
 }
+.d-n{
+    display: none;
+}
+.d-b{
+    display: block;
+}
 .child{
     width: calc(100% / 10);
     height: calc(100% / 10);
@@ -26,6 +32,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.bg-click{
+    background-color: aqua;
 }
 .clearfix::after {
     content: "";
