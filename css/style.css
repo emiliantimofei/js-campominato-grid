@@ -12,10 +12,11 @@
 
 }
 .father{
-    margin: 0 auto;
+    margin: 30px auto 0;
     width: 800px;
     height: 800px;
     background-color: azure;
+    cursor: pointer;
 }
 .d-n{
     display: none;
@@ -32,6 +33,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 .bg-click{
     background-color: aqua;
@@ -40,7 +42,7 @@
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 .father, .child{
     border: solid black 2px;

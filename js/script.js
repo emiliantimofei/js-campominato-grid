@@ -10,19 +10,20 @@ let bottone = document.getElementById('bottone');
 
 let app = document.getElementById('app');
 
+const numChildren = 100;
+
 // cliccando il bottone mi appare la griglia
-document.addEventListener('click', function(){
+bottone.addEventListener('click', function(){
     app.classList.replace('d-n', 'd-b');
+
+    for (let i = 0; i < numChildren; i++) {
+        let childEl = document.createElement('div');
+        childEl.classList.add('child');
+        childEl.innerHTML = '';
+        app.appendChild(childEl);
+        childEl.addEventListener('click', function(){
+            childEl.classList.add('bg-click');
+            console.log(`Div ${i + 1}`);
+        })
+    }
 });
-
-// spesa: mini box child
-let child = document.querySelector('child');
-
-document.addEventListener('click', function(){
-   child = classList.add('bg-click');
-   for (let i = 0; i <= 100; i++) {
-    const element = array[i];
-    console.log(element);
-   }
-});
-
