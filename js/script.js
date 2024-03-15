@@ -5,7 +5,7 @@
 // Ci saranno quindi 10 caselle per ognuna delle 10 righe.
 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 
-// spesa: bottone + app
+// spesa: bottone + app + numChildren
 let bottone = document.getElementById('bottone');
 
 let app = document.getElementById('app');
@@ -13,6 +13,8 @@ let app = document.getElementById('app');
 const numChildren = 100;
 
 // cliccando il bottone mi appare la griglia
+// la quale ha 100 box che se cliccati diventano azzurri 
+// inoltre stampano in console il numero relativo alla loro posizione
 bottone.addEventListener('click', function(){
     app.classList.replace('d-n', 'd-b');
 
